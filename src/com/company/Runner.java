@@ -7,13 +7,13 @@ public class Runner
         System.out.println("Creating Random Int Array...");
         int[] testArr = randIntArr(1000000);
         System.out.println("Copying Array...");
-        int[] bubbleSort = copyIntArray(testArr);
+        int[] bubbleSortArr = copyIntArray(testArr);
         long timeStart = 0;
         long timeStop = 0;
 
         System.out.println("Sorting using bubbleSort()");
         timeStart = System.nanoTime();
-        InPlaceSorts.bubbleSort(bubbleSort);
+        InPlaceSorts.bubbleSort(bubbleSortArr);
         timeStop = System.nanoTime() - timeStart;
 
         System.out.println("Time for bubbleSort() :" + timeStop + " nanoseconds");
